@@ -1,0 +1,196 @@
+/* -------------------------------------------------------------------------- */
+/*                                   COLORS                                   */
+/* -------------------------------------------------------------------------- */
+/*Background color: #fffaf1cc*/
+/*Primary color: #ffe5b0*/
+/*Secondary color: #e89058*/
+/*BTN color: #bb7b00*/
+/*Text color:#000*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 400;
+  color: #000;
+  background-color: #fffaf1cc;
+  font-family: "Montserrat";
+}
+
+.container {
+  max-width: 150rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+  margin: 0px auto;
+}
+.btn {
+  padding: 1rem 2.5rem;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  font-weight: 700;
+  background-color: #bb7b00;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.down {
+  position: relative;
+  bottom: -0.8rem;
+}
+.down:last-child {
+  margin-left: -1.3rem;
+}
+.dropdown_menu {
+  width: 30rem;
+  height: 0;
+  background-color: #feecca;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open {
+  height: 15rem;
+}
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading-secondary {
+  max-width: 65rem;
+  text-align: center;
+  font-size: 3.8rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem;
+  gap: 15rem;
+  max-width: 150rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.hero-section {
+  padding: 1.5rem 2rem;
+  height: 80vh;
+  max-width: 150rem;
+  margin: 0 auto;
+  margin-top: 22rem;
+}
+.about-section {
+  padding: 3rem;
+  max-width: 150rem;
+  margin: 0 auto;
+  margin-top: -10rem;
+}
+
+.testimonial-section {
+  padding: 5rem 3rem;
+  font-size: 1.5rem;
+  max-width: 150rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-section {
+  padding: 15rem 3rem;
+  font-size: 1.5rem;
+  background-color: #e89058;
+  margin-top: 18rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: repeat(2, max-content);
+  align-items: center;
+  gap: 5rem;
+  max-width: 150rem;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 5rem;
+  column-gap: 30rem;
+}
+
+.cta-section {
+  padding: 15rem 5rem;
+  font-size: 1.5rem;
+  max-width: 150rem;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 3rem;
+  background-color: #feecca;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   BUTTON                                   */
+/* -------------------------------------------------------------------------- */
+
+.btn:hover {
+  border: 1px solid #000;
+  background: #dd9000;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+.footer-nav-link:hover {
+  color: #c78300;
+  transition: all 0.3s;
+}
+.nav-link:hover {
+  color: #c78300;
+  transition: all 0.3s;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 ANIMATIONS                                 */
+/* -------------------------------------------------------------------------- */
+@keyframes move {
+  /*starting point and angle (same angle as choosen into .levitation)*/
+  from {
+    transform: translateY(-20px) translateX(-20px);
+  }
+  /* ending point and angle */
+  to {
+    transform: translateY(20px) translateX(20px);
+  }
+}
+@keyframes levitate {
+  /*starting point and angle (same angle as choosen into .levitation)*/
+  from {
+    transform: translateY(-10px);
+  }
+  /* ending point and angle */
+  to {
+    transform: translateY(15px);
+  }
+}
+@keyframes fade {
+  /*starting point and angle (same angle as choosen into .levitation)*/
+  from {
+    opacity: 0;
+  }
+  /* ending point and angle */
+  to {
+    opacity: 1;
+  }
+}
